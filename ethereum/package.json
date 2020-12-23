@@ -1,0 +1,43 @@
+{
+  "name": "nftlend-contracts",
+  "version": "0.0.1",
+  "description": "Repository for all the loopx Contracts ",
+  "main": "truffle-config.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "truffle test --network local ",
+    "deployLocal": "truffle migrate --network local",
+    "deployDev": "truffle migrate --network devnet",
+    "deployTest": "truffle migrate --network testnet",
+    "deployLive": "truffle migrate --network mainnet",
+    "solidityAudit": " slither . --json docs/secureAudit.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loopx/contracts.git"
+  },
+  "author": "I-BTC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/loopx/contracts/issues"
+  },
+  "homepage": "https://github.com/loopx/contracts#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^3.2.0",
+    "@truffle/hdwallet-provider": "^1.1.1",
+    "dotenv": "^8.2.0",
+    "http": "0.0.0",
+    "https": "1.0.0",
+    "retry": "0.12.0",
+    "truffle": "5.1.5",
+    "truffle-security": "^1.7.1",
+    "web3-core-helpers": "1.2.4",
+    "xhr2-cookies": "1.1.0"
+  },
+  "devDependencies": {
+    "solc": "0.5.15"
+  },
+  "keywords": []
+}
