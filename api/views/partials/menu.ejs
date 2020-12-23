@@ -14,12 +14,6 @@
 			<nav class="main-nav float-right d-none d-lg-block">
 				<ul>
 					<li class="active"><a href="/">Home</a></li>
-					<% if(activeBar != 'dashboard'){ %>
-					<li><a href="#">About Us</a></li>
-					<li><a href="#">Road Map</a></li>
-					<li><a href="#">FAQ</a></li>
-					<li><a href="<%= session.isLoggedIn ? "/dashboard" : "/#intro" %>">NFT Tokens</a></li>
-					<% } %>
 				</ul>
 			</nav>
 			<!-- main-nav -->
